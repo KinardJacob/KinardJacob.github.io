@@ -4,21 +4,50 @@ font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     text-align:center;
-    color: olive;
+    color: black;;
 }
 .about{
     text-align: center;
-    color: olive;
+    color: black;;
 }
 .skill{
     text-align: center;
-    color: olive
+    color: black;
 }
 .projects{
     text-align: center;
-    color: olive;
+    color: black;;
 }
 .contact{
     text-align: center;
-    color: olive;
+    color: black;
+}
+h2{
+    text-align: center;
+    color: black;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.project {
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: olivedrab;
+    border-radius: 25%;
+}
+.project img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid burlywood;
+    display: block;
+    margin: auto;
 }
