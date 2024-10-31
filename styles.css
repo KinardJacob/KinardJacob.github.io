@@ -62,10 +62,10 @@ a { /* change the appearance of ALL links */
     margin: 15px;
     }
     .about img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         border-radius: 25%;
-        border: 5px solid darkgreen;
+        border: 3px solid darkgreen;
     }     
     .about{
         display:flex;
@@ -74,7 +74,7 @@ a { /* change the appearance of ALL links */
         margin-left: 100px;
         justify-content: center;
     }
-    about p {
+    .about p {
         width:50%;
         text-align: center;
         margin: auto;
