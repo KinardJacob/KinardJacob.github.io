@@ -24,7 +24,9 @@ p {
 }
 
 img {
-    display: block;
+    align-content: center;
+    margin: 60px;
+    display: outside;
     border: 3px solid #556b2f;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
