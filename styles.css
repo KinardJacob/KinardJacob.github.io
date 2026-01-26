@@ -1,21 +1,62 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #dedeb9;
     color: #2c3e2a;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-h1 {
+/* header */
+header {
+    background-color: #f5f5dc;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #d4af37;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
     color: #3a4a2f;
-    border-bottom: 2px solid #d4af37;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+header h2 {
+    color: #556b2f;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
     color: #556b2f;
-    margin-top: 20px;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4af37;
+    font-size: 2em;
+}
+
+h3 {
+    color: #3a4a2f;
+    margin: 10px 0;
 }
 
 p {
@@ -23,21 +64,158 @@ p {
     text-align: left;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #556b2f;
-}
-
 a {
     color: #556b2f;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: #d4af37;
+}
+
+/* about section */
+#about {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* assignments grid */
+.assignments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.assignment-item {
+    background-color: #f5f5dc;
+    border: 2px solid #556b2f;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assignment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.assignment-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #556b2f;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.assignment-item h3 {
+    margin-top: 0;
+}
+
+.assignment-item p {
+    color: #2c3e2a;
+    font-size: 0.95em;
+}
+
+/* projects grid */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project-item {
+    background-color: #f5f5dc;
+    border: 2px solid #556b2f;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #556b2f;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.project-item p {
+    color: #2c3e2a;
+    font-size: 0.95em;
+}
+
+/* footer */
+footer {
+    background-color: #3a4a2f;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* media query for small screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .assignments-grid,
+    .projects-grid {
+        flex-direction: column;
+    }
+
+    .assignment-item,
+    .project-item {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* legacy support */
+#main-container {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 #assignments-list {
@@ -47,11 +225,4 @@ a:hover {
 
 #assignments-list li {
     margin: 10px 0;
-}
-
-#main-container {
-    background-color: #f5f5dc;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
