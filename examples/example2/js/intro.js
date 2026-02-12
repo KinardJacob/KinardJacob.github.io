@@ -38,4 +38,25 @@ document.getElementById("txt-num-days").onchange = (e) => {
     } else {
         p.innerHTML = "You killed me :(";
     }
+
+ const p = document.getElementById("p-count-display");
+ let count = 0;
+ let countInterval;
+
+ document.getElementById("btn-start-count").onclick = (e) => {
+    countInterval = setInterval(() => {
+        p.innerHTML = count++;
+    }, 1000);
 };
+
+};
+document.getElementById("btn-pause-count").onclick = (e) => {
+    clearInterval(countInterval);
+};
+
+document.getElementById("btn-stop-count").onclick = (e) => {
+    clearInterval(countInterval);
+    count = 0;
+    p.innerHTML = count;
+};
+
