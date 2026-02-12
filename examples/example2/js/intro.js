@@ -38,25 +38,40 @@ document.getElementById("txt-num-days").onchange = (e) => {
     } else {
         p.innerHTML = "You killed me :(";
     }
+};
 
- const p = document.getElementById("p-count-display");
- let count = 0;
- let countInterval;
+const p =document.getElementById("p-count-display");
+let count = 0;
+let countInterval;
+const startButton = document.getElementById("btn-start-count");
 
- document.getElementById("btn-start-count").onclick = (e) => {
-    countInterval = setInterval(() => {
+startButton.onclick = () => {
+    countInterval = setInterval(()=>{
+        startButton.disabled = true;
         p.innerHTML = count++;
-    }, 1000);
+    },500);
 };
 
-};
-document.getElementById("btn-pause-count").onclick = (e) => {
+document.getElementById("btn-pause-count").onclick = () => {
+    startButton.disabled = false;
     clearInterval(countInterval);
 };
 
-document.getElementById("btn-stop-count").onclick = (e) => {
-    clearInterval(countInterval);
+document.getElementById("btn-stop-count").onclick = () => {
+    startButton.disabled = false;
     count = 0;
-    p.innerHTML = count;
+    clearInterval(countInterval);
 };
 
+/* Display the date */
+setInterval(()=>{
+    const today = new Date();
+    const month = today.getMonth();
+    const day = today.getDay();
+    const year = today.getFullYear();
+    const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+
+    document.getElementById("p-date").innerHTML = `${hours}:${minutes}:${seconds}, ${month}/${day}/${year}`;
+}, 500);

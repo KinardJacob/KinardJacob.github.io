@@ -71,6 +71,10 @@ button {
     color:darkslategray;
 }
 
+button:disabled {
+    background:gray;
+}
+
 /* Navigation */
 #toggle-nav {
     position:absolute;
@@ -100,6 +104,12 @@ nav li:not(:last-child) {
 
 nav a {
     text-decoration: none;  /* Remove underline */
+    color:white;
+}
+
+/* Date */
+#p-date {
+    padding:10px;
     color:white;
 }
 
