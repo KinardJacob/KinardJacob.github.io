@@ -3,6 +3,7 @@
 :root {
     --color-text: #2e2b26;
     --site-text: var(--color-text);
+    --text-shadow: 0 2px 6px rgba(0,0,0,0.12);
     --color-bg: #c8bfae;
     --separator-color: #2b2b27;
     --color-dark: #33492f;
@@ -91,6 +92,16 @@ body {
     font-weight: bold;
 }
 
+/* Soft drop shadow for key text */
+.hero-content h1,
+.family-content h2,
+.why-content h2,
+.warm-quote,
+.footer p,
+.quote-author {
+    text-shadow: var(--text-shadow);
+}
+
 .nav-button {
     position: absolute;
     top: 50%;
@@ -175,16 +186,15 @@ body {
     font-family: inherit;
     box-shadow: 0 8px 20px rgba(38,45,22,0.22), inset 0 1px 0 rgba(255,255,255,0.05);
     transform: translateY(0);
+    transition: filter 0.18s ease, opacity 0.18s ease;
 }
 
 .book-button:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 18px 40px rgba(38,45,22,0.28);
+    filter: brightness(0.9);
 }
 
 .book-button:active {
-    transform: translateY(-1px) scale(0.995);
-    box-shadow: 0 10px 24px rgba(38,45,22,0.22);
+    filter: brightness(0.85);
 }
 
 /* Why section */
