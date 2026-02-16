@@ -92,7 +92,7 @@ body {
     font-weight: bold;
 }
 
-/* Soft drop shadow for key text */
+
 .hero-content h1,
 .family-content h2,
 .why-content h2,
@@ -346,7 +346,7 @@ img {
     border-top: 6px solid var(--nav-1);
 }
 
-/* Responsive Design */
+/* Resoluition tweaks */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
