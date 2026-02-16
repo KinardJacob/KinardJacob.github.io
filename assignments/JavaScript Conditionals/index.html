@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Conditionals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>JavaScript Conditionals</h1>
+                <div class="subtitle">If Statements</div>
+            </header>
+
+            <!-- Navigation Menu -->
+            <nav class="menu-toggle" id="menuToggle">
+                <span class="menu-arrow" id="menuArrow">▼</span>
+                <div class="menu-items" id="menuItems">
+                    <a href="#" class="menu-link" onclick="showExercise(1); return false;">Exercise 1</a>
+                    <a href="#" class="menu-link" onclick="showExercise(2); return false;">Exercise 2</a>
+                </div>
+            </nav>
+
+            <nav class="menu-large">
+                <a href="#" class="menu-link" onclick="showExercise(1); return false;">Exercise 1</a> | <a href="#" class="menu-link" onclick="showExercise(2); return false;">Exercise 2</a>
+            </nav>
+
+            <!-- Exercise 1 -->
+            <section id="exercise1" class="exercise visible">
+                <div class="exercise-container">
+                    <h2>How many minutes until class?</h2>
+                    <div class="slider-container">
+                        <input type="range" id="minutesSlider" min="0" max="60" value="30" class="slider">
+                        <div class="slider-value" id="sliderValue">30 minutes</div>
+                    </div>
+                    <div class="message-box" id="messageBox"></div>
+                </div>
+            </section>
+
+            <!-- Exercise 2 -->
+            <section id="exercise2" class="exercise">
+                <div class="exercise-container">
+                    <h2>Countdown till class</h2>
+                    <div class="message-box" id="countdownBox"></div>
+                </div>
+            </section>
+
+            <footer>
+                <p>Jacob Kinard</p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
