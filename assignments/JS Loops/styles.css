@@ -1,8 +1,30 @@
+/* Page layout */
 body {
   background: #eef;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Banner */
+#banner {
+  width: 100%;
+  background: #dcdcdc;
+  border-bottom: 3px solid #aaa;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#banner h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Center bowl section */
+#content {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 /* Bowl shape */
@@ -49,4 +71,13 @@ body {
     transform: translateY(-240px) scale(1);
     opacity: 0;
   }
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+  font-size: 1rem;
 }
