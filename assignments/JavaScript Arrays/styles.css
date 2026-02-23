@@ -6,8 +6,8 @@
 
 body {
     font-family: "Trebuchet MS", Arial, sans-serif;
-    background: #efefef;
-    color: #4f7f8f;
+    background: #eef3ea;
+    color: #2f5b2a;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,8 +17,8 @@ body {
 
 .assignment-card {
     width: min(560px, 100%);
-    background: #e8e8e1;
-    border: 1px solid #d8d8cf;
+    background: #f7f5ea;
+    border: 1px solid #d3ddc8;
     padding: 24px 28px 20px;
     text-align: center;
 }
@@ -32,22 +32,13 @@ body {
 }
 
 .card-header h1 {
-    color: #4f7f8f;
+    color: #2f5b2a;
     font-size: 2.7rem;
     line-height: 1.1;
 }
 
-.menu-dots {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #777;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
 h2 {
-    color: #d98282;
+    color: #d6761b;
     font-size: 2rem;
     margin-bottom: 22px;
 }
@@ -67,10 +58,10 @@ h2 {
 
 #mood-select {
     padding: 6px 10px;
-    border: 1px solid #87a8b3;
+    border: 1px solid #87a87e;
     font-size: 1.2rem;
-    color: #4f7f8f;
-    background: #f3f3ee;
+    color: #2f5b2a;
+    background: #f6f6ee;
 }
 
 .songs-section {
@@ -84,13 +75,13 @@ h2 {
 }
 
 .song-link {
-    color: #4f7f8f;
+    color: #2f5b2a;
     font-size: 1.45rem;
     text-decoration: underline;
 }
 
 .song-link:hover {
-    color: #2f6678;
+    color: #d6761b;
 }
 
 .video-section {
@@ -106,7 +97,7 @@ h2 {
 }
 
 .card-footer {
-    color: #df8c8c;
+    color: #d6761b;
     margin-top: 18px;
     font-size: 1.25rem;
 }

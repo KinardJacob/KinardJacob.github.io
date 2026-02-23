@@ -9,30 +9,25 @@ const videoSection = document.getElementById("video-section");
 
 // Data Loading - Happy songs
 const happySongs = {
-	"Happy by Pharrell Williams": {
-		displayText: "Happy by Pharrell Williams",
-		embedCode: `
-			<!-- PASTE EMBED CODE FOR HAPPY HERE -->
-			<!-- Example format:
-			<iframe src="https://www.youtube.com/embed/ZbZSe6N_BXs" title="Happy by Pharrell Williams" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			-->
-		`
+	"Pharrell Williams - Happy": {
+		displayText: "Pharrell Williams - Happy",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/ZbZSe6N_BXs?si=Y2VG--tGzIF49RDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Don't Stop Me Now by Queen": {
-		displayText: "Don't Stop Me Now by Queen",
-		embedCode: `<!-- PASTE EMBED CODE FOR DON'T STOP ME NOW HERE -->`
+	"Katrina & The Waves - Walking On Sunshine": {
+		displayText: "Katrina & The Waves - Walking On Sunshine",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/iPUmE-tne5U?si=RWviYvQ_UezQh8cu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Can't Stop the Feeling by Justin Timberlake": {
-		displayText: "Can't Stop the Feeling by Justin Timberlake",
-		embedCode: `<!-- PASTE EMBED CODE FOR CAN'T STOP THE FEELING HERE -->`
+	"Justin Timberlake - Can't Stop the Feeling": {
+		displayText: "Justin Timberlake - Can't Stop the Feeling",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/ru0K8uYEZWw?si=cA2tzflXzzGIPYpW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Don't Worry Be Happy by Bobby McFerrin": {
-		displayText: "Don't Worry Be Happy by Bobby McFerrin",
-		embedCode: `<!-- PASTE EMBED CODE FOR DON'T WORRY BE HAPPY HERE -->`
+	"Dua Lipa - Levitating Featuring DaBaby": {
+		displayText: "Dua Lipa - Levitating Featuring DaBaby",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/TUVcZfQe-Kw?si=CkOywaGs2nKn_hvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"I'm Walking on Sunshine by Katrina & the Waves": {
-		displayText: "I'm Walking on Sunshine by Katrina & the Waves",
-		embedCode: `<!-- PASTE EMBED CODE FOR I'M WALKING ON SUNSHINE HERE -->`
+	"Taylor Swift - Shake It Off": {
+		displayText: "Taylor Swift - Shake It Off",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/nfWlot6h_JM?si=eCsAs6rEo3s9U32Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	}
 };
 
