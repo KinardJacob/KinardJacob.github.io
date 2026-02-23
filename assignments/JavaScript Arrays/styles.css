@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: #efefef;
+    color: #4f7f8f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.assignment-card {
+    width: min(560px, 100%);
+    background: #e8e8e1;
+    border: 1px solid #d8d8cf;
+    padding: 24px 28px 20px;
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.card-header h1 {
+    color: #4f7f8f;
+    font-size: 2.7rem;
+    line-height: 1.1;
+}
+
+.menu-dots {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #777;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #d98282;
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.mood-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.mood-picker label {
+    font-size: 1.6rem;
+}
+
+#mood-select {
+    padding: 6px 10px;
+    border: 1px solid #87a8b3;
+    font-size: 1.2rem;
+    color: #4f7f8f;
+    background: #f3f3ee;
+}
+
+.songs-section {
+    min-height: 170px;
+}
+
+.songs-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.song-link {
+    color: #4f7f8f;
+    font-size: 1.45rem;
+    text-decoration: underline;
+}
+
+.song-link:hover {
+    color: #2f6678;
+}
+
+.video-section {
+    margin-top: 24px;
+    min-height: 0;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    border: 0;
+}
+
+.card-footer {
+    color: #df8c8c;
+    margin-top: 18px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .assignment-card {
+        padding: 18px;
+    }
+
+    .card-header h1 {
+        font-size: 2.05rem;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    .mood-picker label {
+        font-size: 1.2rem;
+    }
+
+    #mood-select {
+        font-size: 1rem;
+    }
+
+    .song-link {
+        font-size: 1.1rem;
+    }
+}
