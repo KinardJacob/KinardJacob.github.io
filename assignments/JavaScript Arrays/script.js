@@ -42,21 +42,21 @@ const sadSongs = {
 		displayText: "Lewis Capaldi - Someone You Loved",
 		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/zABLecsR5UE?si=mibDWyy-Vg0YPoYW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Someone You Loved by Lewis Capaldi": {
-		displayText: "Someone You Loved by Lewis Capaldi",
-		embedCode: `<!-- PASTE EMBED CODE FOR SOMEONE YOU LOVED HERE -->`
+	"Billie Eilish - when the party's over": {
+		displayText: "Billie Eilish - when the party's over",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/pbMwTqkKSps?si=ZXKMki1LvIqbErdp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Someone Like You by Adele": {
-		displayText: "Someone Like You by Adele",
-		embedCode: `<!-- PASTE EMBED CODE FOR SOMEONE LIKE YOU HERE -->`
+	"Adele - Easy On Me": {
+		displayText: "Adele - Easy On Me",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/U3ASj1L6_sY?si=ZN5u-o1C536B-llp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Fix You by Coldplay": {
-		displayText: "Fix You by Coldplay",
-		embedCode: `<!-- PASTE EMBED CODE FOR FIX YOU HERE -->`
+	"Olivia Rodrigo - drivers license": {
+		displayText: "Olivia Rodrigo - drivers license",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmDBbnmKpqQ?si=pfw5e1WcvadrEhDe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	},
-	"Hurt by Johnny Cash": {
-		displayText: "Hurt by Johnny Cash",
-		embedCode: `<!-- PASTE EMBED CODE FOR HURT HERE -->`
+	"Sam Smith - Too Good At Goodbyes": {
+		displayText: "Sam Smith - Too Good At Goodbyes",
+		embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/J_ub7Etch2U?si=psqdLNd4DonHiIr_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 	}
 };
 
