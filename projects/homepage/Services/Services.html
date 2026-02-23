@@ -10,51 +10,79 @@
     <!-- Navigation -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#services">Services & Pricing</a></li>
-            <li><a href="#behind">Behind the Scenes</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Client Gallery</a></li>
+            <li><a href="../index.html">Portfolio</a></li>
+            <li><a href="Services.html">Services & Pricing</a></li>
+            <li><a href="../Behind/Behind.html">Behind the Scenes</a></li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="../Client/Client.html">Client Gallery</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="portfolio">
-        <div class="hero-content">
-            <h1>Explore your photography needs today!</h1>
-        </div>
-        <button class="nav-button prev">❮</button>
-        <button class="nav-button next">❯</button>
-    </section>
 
-    <!-- Family Photos Section -->
-    <section class="family-section">
-        <div class="family-container">
-            <div class="family-image">
-                <img src="images/a cheerful family ph.png" alt="Cheerful family photo">
+        <!-- Hero Section (services-specific layout) -->
+        <section class="hero services-hero" id="portfolio">
+            <div class="hero-frame">
+                <img src="../images/mountains-5455002_1280.jpg" alt="Hero image">
+                <div class="hero-title">Simple, Transparent Pricing</div>
             </div>
-            <div class="family-content">
-                <h2>Upgrade your family photos!</h2>
-                <button class="book-button">Book Now!</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Why Choose Me Section -->
-    <section class="why-section" id="about">
-        <div class="why-container">
-            <div class="why-images">
-                <img src="images/a professional portr.png" alt="Professional portrait" class="img-large">
-                <img src="images/a graduation portrai.png" alt="Graduation portrait" class="img-small img-top-right">
-                <img src="images/ChatGPT Image Feb 8, 2026, 09_42_09 PM.png" alt="Mountain landscape" class="img-small img-bottom-right"> 
-            </div>
-            <div class="why-content">
-                <h2>Why Choose Me?</h2>
-                <p>I make photography easy, fun, and stress-free. Whether it's your first session or your tenth, I'll guide you through every step and deliver images you'll love.</p>
-            </div>
-        </div>
-    </section>
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="pricing-grid">
+                <article class="plan-card">
+                    <h3>Mini</h3>
+                    <div class="price-badge">$10</div>
+                    <p class="plan-features">10 Pictures</p>
+                    <button class="book-button">Book Now!</button>
+                </article>
 
+                <article class="plan-card">
+                    <h3>Standard</h3>
+                    <div class="price-badge">$25</div>
+                    <p class="plan-features">30 Pictures</p>
+                    <button class="book-button">Book Now!</button>
+                </article>
+
+                <article class="plan-card">
+                    <h3>Deluxe</h3>
+                    <div class="price-badge">$50</div>
+                    <p class="plan-features">45 Pictures</p>
+                    <button class="book-button">Book Now!</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details-section">
+            <div class="details-panel">
+                <h2>Details</h2>
+                <div class="details-grid">
+                    <div class="details-box">
+                        <ul>
+                            <li>15 Min</li>
+                            <li>Place: My choice</li>
+                            <li>Revisions: 0</li>
+                        </ul>
+                    </div>
+                    <div class="details-box">
+                        <ul>
+                            <li>30 Min</li>
+                            <li>Place: You Pick</li>
+                            <li>Revisions: 1</li>
+                        </ul>
+                    </div>
+                    <div class="details-box">
+                        <ul>
+                            <li>60 Min</li>
+                            <li>Place: You Pick</li>
+                            <li>Revisions: 2</li>
+                            <li>FREE: USB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!-- Footer -->
     <footer class="footer">
         <p>2026 Jacob Kinard | CSCE 242 Web Applications</p>
