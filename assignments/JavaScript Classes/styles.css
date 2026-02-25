@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f2f2f2;
+	color: #2c2c2c;
+}
+
+.page-wrap {
+	width: min(1200px, 94%);
+	margin: 30px auto;
+}
+
+.gallery-panel {
+	background: #e6e7dd;
+	padding: 24px;
+}
+
+h1,
+h2 {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	color: #39707b;
+	margin-bottom: 8px;
+}
+
+h2 {
+	color: #ce6d78;
+	margin-bottom: 20px;
+}
+
+.songs-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	gap: 14px;
+}
+
+.song-card {
+	border-radius: 6px;
+	overflow: hidden;
+	background: #4462ab;
+	color: #ffffff;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.song-card:hover {
+	transform: translateY(-3px);
+}
+
+.song-card h3 {
+	margin: 10px 8px 2px;
+	font-size: 1.05rem;
+	text-align: center;
+}
+
+.song-card .artist {
+	text-align: center;
+	font-size: 0.8rem;
+	margin: 0 8px 8px;
+	color: #dee7ff;
+}
+
+.song-card img {
+	width: 100%;
+	height: 230px;
+	object-fit: cover;
+	display: block;
+}
+
+.modal-content {
+	max-width: 900px;
+}
+
+.modal-layout {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 320px;
+}
+
+.modal-video {
+	flex: 2 1 520px;
+	min-height: 320px;
+	border: 0;
+}
+
+.modal-info {
+	flex: 1 1 260px;
+	background: #bdd5f7;
+	padding: 20px;
+	line-height: 1.4;
+}
+
+.modal-info h3 {
+	margin-top: 0;
+	color: #2c4d9b;
+}
+
+.modal-info .byline {
+	color: #5f6f8c;
+	margin-bottom: 14px;
+}
+
+.modal-info p {
+	margin: 6px 0;
+}
+
+#modal-close {
+	z-index: 2;
+}
+
+@media (max-width: 700px) {
+	.modal-video {
+		min-height: 250px;
+	}
+}
