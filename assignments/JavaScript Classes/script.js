@@ -35,39 +35,39 @@ class Song {
 
 const songs = [
 	new Song(
-		"Two-Headed Boy",
-		"Neutral Milk Hotel",
-		"In the Aeroplane Over the Sea",
-		1998,
-		"Indie Folk",
-		"https://upload.wikimedia.org/wikipedia/en/0/01/Neutral_Milk_Hotel_-_In_the_Aeroplane_Over_the_Sea.jpg",
+		"Bohemian Rhapsody",
+		"Queen",
+		"A Night at the Opera",
+		1975,
+		"Rock",
+		"https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png",
 		"11LJ1XfEw8c"
 	),
 	new Song(
-		"Jailhouse Rock",
-		"Elvis Presley",
-		"Jailhouse Rock",
-		1957,
-		"Rock and Roll",
-		"https://upload.wikimedia.org/wikipedia/en/7/72/Jailhouse_Rock_EP.jpg",
+		"Billie Jean",
+		"Michael Jackson",
+		"Thriller",
+		1982,
+		"Pop",
+		"https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Billie_Jean.png",
 		"gj0Rz-uP4Mk"
 	),
 	new Song(
-		"So What",
-		"Miles Davis",
-		"Kind of Blue",
-		1959,
-		"Jazz",
-		"https://upload.wikimedia.org/wikipedia/en/9/9c/MilesDavisKindofBlue.jpg",
+		"Mr. Brightside",
+		"The Killers",
+		"Hot Fuss",
+		2004,
+		"Rock",
+		"https://upload.wikimedia.org/wikipedia/en/9/9c/Mr_Brightside.jpg",
 		"ylXk1LBvIqU"
 	),
 	new Song(
-		"Jolene",
-		"Dolly Parton",
-		"Jolene",
-		1974,
-		"Country",
-		"https://upload.wikimedia.org/wikipedia/en/c/c4/Dolly_Parton_-_Jolene.jpg",
+		"Rolling in the Deep",
+		"Adele",
+		"21",
+		2010,
+		"Pop",
+		"https://upload.wikimedia.org/wikipedia/en/1/1b/Adele_-_Rolling_in_the_Deep.png",
 		"Ixrje2rXLMA"
 	)
 ];
