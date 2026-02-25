@@ -49,7 +49,7 @@ const songs = [
 		"Thriller",
 		1982,
 		"Pop",
-		"https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Billie_Jean.png",
+		"https://upload.wikimedia.org/wikipedia/commons/d/dd/Michael_Jackson_1992.jpg",
 		"gj0Rz-uP4Mk"
 	),
 	new Song(
@@ -58,7 +58,7 @@ const songs = [
 		"Hot Fuss",
 		2004,
 		"Rock",
-		"https://upload.wikimedia.org/wikipedia/en/9/9c/Mr_Brightside.jpg",
+		"https://upload.wikimedia.org/wikipedia/commons/e/ea/Riewoldt_with_Killers_GF17.jpg",
 		"ylXk1LBvIqU"
 	),
 	new Song(
@@ -67,7 +67,7 @@ const songs = [
 		"21",
 		2010,
 		"Pop",
-		"https://upload.wikimedia.org/wikipedia/en/1/1b/Adele_-_Rolling_in_the_Deep.png",
+		"https://upload.wikimedia.org/wikipedia/commons/e/e4/Adele_-_Live_2009_%284%29.jpg",
 		"Ixrje2rXLMA"
 	)
 ];
