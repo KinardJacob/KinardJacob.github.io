@@ -41,7 +41,7 @@ const songs = [
 		1975,
 		"Rock",
 		"https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png",
-		"fJ9rUzIMt7o"
+		"fJ9rUzIMcZQ"
 	),
 	new Song(
 		"Billie Jean",
@@ -59,7 +59,7 @@ const songs = [
 		2004,
 		"Rock",
 		"https://upload.wikimedia.org/wikipedia/commons/e/ea/Riewoldt_with_Killers_GF17.jpg",
-		"gGdGFtwCYdA"
+		"gGdGFtwCNBE"
 	),
 	new Song(
 		"Rolling in the Deep",
@@ -68,7 +68,7 @@ const songs = [
 		2010,
 		"Pop",
 		"https://upload.wikimedia.org/wikipedia/commons/e/e4/Adele_-_Live_2009_%284%29.jpg",
-		"EvigYakxKZQ"
+		"rYEDA3JcQqw"
 	)
 ];
 
