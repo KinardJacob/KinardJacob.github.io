@@ -68,7 +68,7 @@ body {
 
 /* Hero */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('images/mountains-5455002_1280.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../images/ChatGPT Image Feb 8, 2026, 10_17_06 PM.png') center/cover no-repeat;
     height: 400px;
     display: flex;
     align-items: center;
@@ -164,20 +164,7 @@ body {
 .family-content {
     flex: 1 1 58%;
     padding: 30px 10px 30px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
-.family-description {
-    font-size: 28px;
-    font-family: inherit;
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    color: var(--site-text);
-}
-
 
 .family-content h2 {
     font-size: 42px;
@@ -187,7 +174,6 @@ body {
 }
 
 .book-button {
-    margin-top: 10px;
     background: linear-gradient(135deg, var(--nav-3) 0%, var(--nav-4) 100%);
     color: var(--nav-1);
     padding: 14px 50px;
@@ -203,6 +189,61 @@ body {
     transition: filter 0.18s ease, opacity 0.18s ease;
 }
 
+/* Pricing grid */
+.pricing-section { padding: 50px 40px; background-color: var(--color-bg); }
+.pricing-grid {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    align-items: start;
+}
+
+.plan-card {
+    background: var(--color-cream);
+    border-radius: 18px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    border: 3px solid rgba(43,43,39,0.06);
+}
+
+.plan-card h3 { font-size: 20px; margin-bottom: 12px; }
+.price-badge {
+    display: inline-block;
+    background: var(--nav-4);
+    color: var(--nav-1);
+    font-size: 32px;
+    padding: 20px 30px;
+    border-radius: 18px;
+    margin: 12px 0 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.plan-features { margin-bottom: 26px; font-weight: 700; }
+
+/* Details panel */
+.details-section { padding: 40px 40px 80px 40px; background: var(--color-bg); }
+.details-panel {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--color-cream);
+    border-radius: 20px;
+    padding: 30px 36px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    border: 6px solid rgba(43,43,39,0.04);
+}
+.details-panel h2 { text-align: center; font-size: 36px; margin-bottom: 24px; }
+.details-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+.details-box { background: var(--nav-4); color: var(--nav-1); padding: 22px; border-radius: 12px; font-weight: 700; }
+.details-box ul { list-style: disc; padding-left: 18px; line-height: 1.9; }
+
+@media (max-width: 900px) {
+    .pricing-grid, .details-grid { grid-template-columns: 1fr; }
+}
+
 .book-button:hover {
     filter: brightness(0.9);
 }
@@ -216,13 +257,6 @@ body {
     padding: 60px 40px;
     background-color: var(--color-bg);
     border-top: 6px solid var(--separator-color);
-}
-.why-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .why-container {
@@ -293,7 +327,7 @@ body {
 }
 
 .why-content p {
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.8;
     background-color: var(--nav-4);
     color: var(--nav-1);

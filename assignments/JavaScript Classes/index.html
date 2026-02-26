@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Classes - Music Time</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<main class="page-wrap">
+		<section class="gallery-panel">
+			<h1>Classes</h1>
+			<h2>Music Time</h2>
+
+			<section id="songs-container" class="songs-grid" aria-label="Song gallery"></section>
+		</section>
+	</main>
+
+	<div id="song-modal" class="w3-modal" aria-hidden="true">
+		<div class="w3-modal-content modal-content">
+			<span id="modal-close" class="w3-button w3-display-topright" aria-label="Close dialog">&times;</span>
+			<section class="modal-layout">
+				<iframe
+					id="modal-video"
+					class="modal-video"
+					title="Song video"
+					src=""
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen>
+				</iframe>
+				<section id="modal-info" class="modal-info" aria-live="polite"></section>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

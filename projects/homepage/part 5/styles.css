@@ -39,7 +39,7 @@ body {
 /* Navigation */
 .navbar {
     background: linear-gradient(90deg, var(--nav-2) 0%, var(--nav-4) 35%, var(--nav-3) 70%, var(--nav-1) 100%);
-    padding: 32px 54px;
+    padding: 40px 68px;
     border-bottom: 3px solid var(--nav-1);
     position: sticky;
     top: 0;
@@ -50,13 +50,13 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 54px;
+    gap: 70px;
 }
 
 .nav-list a {
     color: var(--color-cream);
     text-decoration: none;
-    font-size: 21px;
+    font-size: 25px;
     font-weight: normal;
     transition: color 0.3s ease;
 }
