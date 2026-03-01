@@ -84,20 +84,38 @@ const renderSongs = () => {
 	});
 };
 
+const getEmbedUrl = (youtubeCode) => {
+	return `https://www.youtube-nocookie.com/embed/${youtubeCode}?rel=0`;
+};
+
 const openModal = (song) => {
-	modalVideo.src = `https://www.youtube.com/embed/${song.youtubeCode}?autoplay=1`;
-	modalInfo.innerHTML = song.getModalMarkup();
+	if (!modal || !modalVideo || !modalInfo) {
+		return;
+	}
+
+	const videoUrl = getEmbedUrl(song.youtubeCode);
+	const watchUrl = `https://www.youtube.com/watch?v=${song.youtubeCode}`;
+
+	modalVideo.src = "";
+	modalVideo.src = videoUrl;
+	modalInfo.innerHTML = `${song.getModalMarkup()}<p><a href="${watchUrl}" target="_blank" rel="noopener noreferrer">Open on YouTube</a></p>`;
 	modal.style.display = "block";
 	modal.setAttribute("aria-hidden", "false");
 };
 
 const closeModal = () => {
+	if (!modal || !modalVideo) {
+		return;
+	}
+
 	modal.style.display = "none";
 	modal.setAttribute("aria-hidden", "true");
 	modalVideo.src = "";
 };
 
-modalCloseButton.addEventListener("click", closeModal);
+if (modalCloseButton) {
+	modalCloseButton.addEventListener("click", closeModal);
+}
 
 window.addEventListener("click", (event) => {
 	if (event.target === modal) {
@@ -111,4 +129,6 @@ window.addEventListener("keydown", (event) => {
 	}
 });
 
-renderSongs();
+if (songsContainer) {
+	renderSongs();
+}
