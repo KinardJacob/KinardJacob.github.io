@@ -1,5 +1,5 @@
 class Song {
-	constructor(title, artist, album, year, genre, cover, youtubeCode) {
+	constructor(title, artist, album, year, genre, cover, youtubeCode, youtubeEmbedSrc) {
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
@@ -7,6 +7,7 @@ class Song {
 		this.genre = genre;
 		this.cover = cover;
 		this.youtubeCode = youtubeCode;
+		this.youtubeEmbedSrc = youtubeEmbedSrc;
 	}
 
 	getCardElement = (onClickHandler) => {
@@ -41,7 +42,8 @@ const songs = [
 		1975,
 		"Rock",
 		"images/Bohemian_Rhapsody.png",
-		"fJ9rUzIMcZQ"
+		"fJ9rUzIMcZQ",
+		"https://www.youtube.com/embed/fJ9rUzIMcZQ?si=lytlnDM3WoSXZARM"
 	),
 	new Song(
 		"Billie Jean",
@@ -50,7 +52,8 @@ const songs = [
 		1982,
 		"Pop",
 		"images/Michael_Jackson_1992.jpg",
-		"Zi_XLOBDo_Y"
+		"Zi_XLOBDo_Y",
+		"https://www.youtube.com/embed/Zi_XLOBDo_Y?si=ZJPqjs7J8ntJNdG-"
 	),
 	new Song(
 		"Mr. Brightside",
@@ -59,7 +62,8 @@ const songs = [
 		2004,
 		"Rock",
 		"images/Riewoldt_with_Killers_GF17.jpg",
-		"gGdGFtwCNBE"
+		"gGdGFtwCNBE",
+		"https://www.youtube.com/embed/gGdGFtwCNBE?si=45IwqCeaIAKfLaRM"
 	),
 	new Song(
 		"Rolling in the Deep",
@@ -68,7 +72,8 @@ const songs = [
 		2010,
 		"Pop",
 		"images/Adele_-_Live_2009_(4).jpg",
-		"rYEDA3JcQqw"
+		"rYEDA3JcQqw",
+		"https://www.youtube.com/embed/rYEDA3JcQqw?si=zZPAXYhMro-yJsui"
 	)
 ];
 
@@ -84,16 +89,12 @@ const renderSongs = () => {
 	});
 };
 
-const getEmbedUrl = (youtubeCode) => {
-	return `https://www.youtube-nocookie.com/embed/${youtubeCode}?rel=0`;
-};
-
 const openModal = (song) => {
 	if (!modal || !modalVideo || !modalInfo) {
 		return;
 	}
 
-	const videoUrl = getEmbedUrl(song.youtubeCode);
+	const videoUrl = song.youtubeEmbedSrc;
 	const watchUrl = `https://www.youtube.com/watch?v=${song.youtubeCode}`;
 
 	modalVideo.src = "";
