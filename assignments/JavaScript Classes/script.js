@@ -1,5 +1,5 @@
 class Song {
-	constructor(title, artist, album, year, genre, cover, youtubeCode, youtubeEmbedSrc) {
+	constructor(title, artist, album, year, genre, cover, youtubeCode) {
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
@@ -7,8 +7,11 @@ class Song {
 		this.genre = genre;
 		this.cover = cover;
 		this.youtubeCode = youtubeCode;
-		this.youtubeEmbedSrc = youtubeEmbedSrc;
 	}
+
+	getYouTubeEmbedSrc = () => {
+		return `https://www.youtube.com/embed/${this.youtubeCode}`;
+	};
 
 	getCardElement = (onClickHandler) => {
 		const card = document.createElement("article");
@@ -42,8 +45,7 @@ const songs = [
 		1975,
 		"Rock",
 		"images/Bohemian_Rhapsody.png",
-		"fJ9rUzIMcZQ",
-		"https://www.youtube.com/embed/fJ9rUzIMcZQ?si=lytlnDM3WoSXZARM"
+		"fJ9rUzIMcZQ"
 	),
 	new Song(
 		"Billie Jean",
@@ -52,8 +54,7 @@ const songs = [
 		1982,
 		"Pop",
 		"images/Michael_Jackson_1992.jpg",
-		"Zi_XLOBDo_Y",
-		"https://www.youtube.com/embed/Zi_XLOBDo_Y?si=ZJPqjs7J8ntJNdG-"
+		"Zi_XLOBDo_Y"
 	),
 	new Song(
 		"Mr. Brightside",
@@ -62,8 +63,7 @@ const songs = [
 		2004,
 		"Rock",
 		"images/Riewoldt_with_Killers_GF17.jpg",
-		"gGdGFtwCNBE",
-		"https://www.youtube.com/embed/gGdGFtwCNBE?si=45IwqCeaIAKfLaRM"
+		"gGdGFtwCNBE"
 	),
 	new Song(
 		"Rolling in the Deep",
@@ -72,8 +72,7 @@ const songs = [
 		2010,
 		"Pop",
 		"images/Adele_-_Live_2009_(4).jpg",
-		"rYEDA3JcQqw",
-		"https://www.youtube.com/embed/rYEDA3JcQqw?si=zZPAXYhMro-yJsui"
+		"rYEDA3JcQqw"
 	)
 ];
 
@@ -94,12 +93,11 @@ const openModal = (song) => {
 		return;
 	}
 
-	const videoUrl = song.youtubeEmbedSrc;
-	const watchUrl = `https://www.youtube.com/watch?v=${song.youtubeCode}`;
+	const videoUrl = song.getYouTubeEmbedSrc();
 
 	modalVideo.src = "";
 	modalVideo.src = videoUrl;
-	modalInfo.innerHTML = `${song.getModalMarkup()}<p><a href="${watchUrl}" target="_blank" rel="noopener noreferrer">Open on YouTube</a></p>`;
+	modalInfo.innerHTML = song.getModalMarkup();
 	modal.style.display = "block";
 	modal.setAttribute("aria-hidden", "false");
 };
