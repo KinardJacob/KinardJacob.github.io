@@ -56,6 +56,22 @@ body {
     text-decoration: underline;
 }
 
+.nav-toggle {
+    display: none;
+    border: 2px solid var(--nav-1);
+    background-color: transparent;
+    color: var(--color-cream);
+    font-family: inherit;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color: var(--color-white);
+}
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../images/landscape-oriented\ i.png') center/cover no-repeat;
     min-height: 400px;
@@ -175,10 +191,25 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 20px 24px;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+
     .nav-list {
+        display: none;
         flex-direction: column;
         gap: 14px;
         text-align: center;
+        margin-top: 14px;
+    }
+
+    .navbar.nav-open .nav-list {
+        display: flex;
     }
 
     .hero-content h1 {
