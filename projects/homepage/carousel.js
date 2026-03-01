@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const initializeCarousel = () => {
     const hero = document.querySelector(".hero");
     const prevButton = document.querySelector(".nav-button.prev");
     const nextButton = document.querySelector(".nav-button.next");
@@ -36,4 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     renderSlide();
-});
+};
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeCarousel);
+} else {
+    initializeCarousel();
+}
