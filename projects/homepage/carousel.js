@@ -9,7 +9,6 @@ const initializeCarousel = () => {
 
     const heroImages = [
         "mountains-5455002_1280.jpg",
-        "leaves.png",
         "landscape-oriented i.png",
         "family of four laugh.png",
         "IMG_20250506_192646484_HDR_PORTRAIT.jpg"
