@@ -8,9 +8,12 @@ document.querySelectorAll(".navbar").forEach((navbar) => {
 
 	const setExpandedState = (isExpanded) => {
 		toggleButton.setAttribute("aria-expanded", String(isExpanded));
+		toggleButton.textContent = isExpanded ? "▴" : "▾";
+		toggleButton.setAttribute("aria-label", isExpanded ? "Close navigation" : "Open navigation");
 	};
 
-	setExpandedState(false);
+	navbar.classList.add("nav-open");
+	setExpandedState(true);
 
 	toggleButton.addEventListener("click", () => {
 		const isOpen = navbar.classList.toggle("nav-open");

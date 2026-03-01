@@ -30,6 +30,7 @@ body {
 .navbar {
     background: linear-gradient(90deg, var(--nav-2) 0%, var(--nav-4) 35%, var(--nav-3) 70%, var(--nav-1) 100%);
     padding: 32px 54px;
+    margin-bottom: 18px;
     border-bottom: 3px solid var(--nav-1);
     position: sticky;
     top: 0;
@@ -38,9 +39,15 @@ body {
 
 .nav-list {
     list-style: none;
-    display: flex;
+    display: none;
+    flex-direction: row;
     justify-content: center;
     gap: 54px;
+    margin-top: 12px;
+}
+
+.navbar.nav-open .nav-list {
+    display: flex;
 }
 
 .nav-list a {
@@ -57,18 +64,31 @@ body {
 }
 
 .nav-toggle {
-    display: none;
-    border: 2px solid var(--nav-1);
-    background-color: transparent;
-    color: var(--color-cream);
+    display: flex;
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid var(--nav-1);
+    background-color: rgba(30, 30, 30, 0.92);
+    color: var(--nav-1);
     font-family: inherit;
-    font-size: 18px;
-    padding: 8px 14px;
-    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    border-radius: 999px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    margin: 0;
+    z-index: 120;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .nav-toggle:hover {
+    background-color: var(--nav-4);
     color: var(--color-white);
 }
 
@@ -193,23 +213,23 @@ body {
 @media (max-width: 768px) {
     .navbar {
         padding: 20px 24px;
+        margin-bottom: 18px;
     }
 
     .nav-toggle {
-        display: block;
-        margin: 0 auto;
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 35%);
+        margin: 0;
+        z-index: 120;
     }
 
     .nav-list {
-        display: none;
         flex-direction: column;
-        gap: 14px;
         text-align: center;
-        margin-top: 14px;
-    }
-
-    .navbar.nav-open .nav-list {
-        display: flex;
+        gap: 14px;
     }
 
     .hero-content h1 {
