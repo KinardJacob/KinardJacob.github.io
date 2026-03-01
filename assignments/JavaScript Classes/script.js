@@ -40,7 +40,7 @@ const songs = [
 		"A Night at the Opera",
 		1975,
 		"Rock",
-		"https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png",
+		"images/Bohemian_Rhapsody.png",
 		"fJ9rUzIMcZQ"
 	),
 	new Song(
@@ -49,7 +49,7 @@ const songs = [
 		"Thriller",
 		1982,
 		"Pop",
-		"https://upload.wikimedia.org/wikipedia/commons/d/dd/Michael_Jackson_1992.jpg",
+		"images/Michael_Jackson_1992.jpg",
 		"Zi_XLOBDo_Y"
 	),
 	new Song(
@@ -58,7 +58,7 @@ const songs = [
 		"Hot Fuss",
 		2004,
 		"Rock",
-		"https://upload.wikimedia.org/wikipedia/commons/e/ea/Riewoldt_with_Killers_GF17.jpg",
+		"images/Riewoldt_with_Killers_GF17.jpg",
 		"gGdGFtwCNBE"
 	),
 	new Song(
@@ -67,7 +67,7 @@ const songs = [
 		"21",
 		2010,
 		"Pop",
-		"https://upload.wikimedia.org/wikipedia/commons/e/e4/Adele_-_Live_2009_%284%29.jpg",
+		"images/Adele_-_Live_2009_(4).jpg",
 		"rYEDA3JcQqw"
 	)
 ];
