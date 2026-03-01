@@ -19,6 +19,7 @@ class Song {
 		card.innerHTML = `
 			<h3>${this.title}</h3>
 			<p class="artist">by ${this.artist}</p>
+			<p class="card-meta">${this.album} (${this.year})</p>
 			<img src="${this.cover}" alt="${this.title} album cover">
 		`;
 
@@ -123,7 +124,7 @@ window.addEventListener("click", (event) => {
 });
 
 window.addEventListener("keydown", (event) => {
-	if (event.key === "Escape" && modal.style.display === "block") {
+	if (modal && event.key === "Escape" && modal.style.display === "block") {
 		closeModal();
 	}
 });
