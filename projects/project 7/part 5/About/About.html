@@ -64,7 +64,9 @@
         <div class="contact-container">
             <h2>Contact Me</h2>
             <p class="contact-intro">Tell me about your vision and I'll help plan your shoot.</p>
-            <form id="contact-form" novalidate>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                <input type="hidden" name="access_key" value="45c7942b-dd42-4f01-a697-d6e4c84f6059">
+                <input type="hidden" name="subject" value="Photography inquiry">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -75,8 +77,8 @@
                 <input type="tel" id="phone" name="phone" placeholder="Optional">
 
                 <label for="session">Session Type</label>
-                <select id="session" name="session">
-                    <option value="">Select a session</option>
+                <select id="session" name="session" required>
+                    <option value="" selected disabled>Select a session</option>
                     <option value="Family">Family</option>
                     <option value="Graduation">Graduation</option>
                     <option value="Headshots">Headshots</option>

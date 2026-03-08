@@ -97,6 +97,10 @@ const validateContactForm = (data) => {
         return "Please use a valid email address.";
     }
 
+    if (!data.session.trim()) {
+        return "Please select a session type.";
+    }
+
     if (!data.message.trim() || data.message.trim().length < 10) {
         return "Please include a message with at least 10 characters.";
     }
@@ -109,7 +113,7 @@ const initializeContactForm = () => {
         return;
     }
 
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = {
@@ -126,19 +130,40 @@ const initializeContactForm = () => {
             return;
         }
 
-        const emailTarget = "jacobkinard1@gmail.com";
-        const subject = encodeURIComponent(`Photography inquiry: ${formData.session || "General"}`);
-        const body = encodeURIComponent(
-            `Name: ${formData.name}\n` +
-            `Email: ${formData.email}\n` +
-            `Phone: ${formData.phone || "Not provided"}\n` +
-            `Session Type: ${formData.session || "Not selected"}\n\n` +
-            `${formData.message}`
-        );
+        const submitButton = contactForm.querySelector("button[type='submit']");
+        if (submitButton) {
+            submitButton.disabled = true;
+        }
 
-        showFormStatus("Thanks! Your email client is opening now.", "success");
-        window.location.href = `mailto:${emailTarget}?subject=${subject}&body=${body}`;
-        contactForm.reset();
+        showFormStatus("Sending your message...", "success");
+
+        try {
+            const web3FormData = new FormData(contactForm);
+            web3FormData.set("subject", `Photography inquiry: ${formData.session || "General"}`);
+
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: web3FormData,
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                showFormStatus("Message sent successfully! I will get back to you soon.", "success");
+                contactForm.reset();
+            } else {
+                showFormStatus(result.message || "Message failed to send. Please try again.", "error");
+            }
+        } catch (error) {
+            showFormStatus("Network error. Please check your connection and try again.", "error");
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+            }
+        }
     });
 };
 
