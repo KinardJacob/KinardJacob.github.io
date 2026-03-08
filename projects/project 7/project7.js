@@ -91,7 +91,7 @@ const validateContactForm = (data) => {
     if (!data.email.trim()) {
         return "Please enter your email.";
     }
-
+ // I used an AI-generated basic email validation. its not perfect but sufficient for most cases
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(data.email)) {
         return "Please use a valid email address.";
