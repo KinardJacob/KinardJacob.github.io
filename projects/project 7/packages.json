@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "JSON images/fam.png",
+    "image": "../../JSON images/fam.png",
     "title": "Classic Family Session",
     "type": "Family",
     "duration": "60 minutes",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "image": "JSON images/golden.png",
+    "image": "../../JSON images/golden.png",
     "title": "Golden Hour Family",
     "type": "Family",
     "duration": "75 minutes",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "image": "JSON images/grad.png",
+    "image": "../../JSON images/grad.png",
     "title": "Graduation Portraits",
     "type": "Graduation",
     "duration": "45 minutes",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "image": "JSON images/headshot.png",
+    "image": "../../JSON images/headshot.png",
     "title": "Professional Headshots",
     "type": "Branding",
     "duration": "40 minutes",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "image": "JSON images/fam2.png",
+    "image": "../../JSON images/fam2.png",
     "title": "Engagement Mini Session",
     "type": "Couples",
     "duration": "50 minutes",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "image": "JSON images/grad2.png",
+    "image": "../../JSON images/grad2.png",
     "title": "Lifestyle Story Session",
     "type": "Lifestyle",
     "duration": "90 minutes",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "image": "JSON images/adventure.png",
+    "image": "../../JSON images/adventure.png",
     "title": "Senior Portrait Premium",
     "type": "Seniors",
     "duration": "90 minutes",
@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "image": "JSON images/adventure.png",
+    "image": "../../JSON images/adventure.png",
     "title": "Adventure Portrait Session",
     "type": "Creative",
     "duration": "120 minutes",
