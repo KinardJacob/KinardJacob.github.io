@@ -1,5 +1,5 @@
 const jsonSources = [
-    "https://kinardjacob.github.io/projects/project%207/packages.json",
+    "https://raw.githubusercontent.com/KinardJacob/KinardJacob.github.io/main/projects/project%207/packages.json",
     "packages.json",
     "../../packages.json",
     "../packages.json"
