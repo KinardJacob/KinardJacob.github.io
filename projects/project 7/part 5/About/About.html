@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../nav.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav-list">▾</button>
+        <ul id="main-nav-list" class="nav-list">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li><a href="../Services/Services.html">Services & Pricing</a></li>
+            <li><a href="../Behind/Behind.html">Behind the Scenes</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="../Client/Client.html">Client Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Jacob</h1>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="../images/IMG_20250506_192646484_HDR_PORTRAIT.jpg" alt="Jacob on the beach">
+            </div>
+            <div class="about-content">
+                <p>
+                    Photography is how I connect with the world—capturing emotion, texture, and light with purpose.
+                    My work spans portraits, graduation shoots, and lifestyle storytelling, always with technical
+                    precision and creative warmth. Kinard Photography is where care meets clarity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="facts-section">
+        <div class="facts-container">
+            <h2>Facts about me</h2>
+            <div class="facts-grid">
+                <ul>
+                    <li>Years of experience</li>
+                    <li>I've done graduation photos</li>
+                    <li>Airshows</li>
+                    <li>Sports</li>
+                    <li>Outdoors</li>
+                </ul>
+                <ul>
+                    <li>I enjoy nature</li>
+                    <li>I love spending time outside with friends and family</li>
+                    <li>I love me some BBQ!</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p class="contact-intro">Tell me about your vision and I'll help plan your shoot.</p>
+            <form id="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Optional">
+
+                <label for="session">Session Type</label>
+                <select id="session" name="session">
+                    <option value="">Select a session</option>
+                    <option value="Family">Family</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Headshots">Headshots</option>
+                    <option value="Couples">Couples</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="book-button">Send Message</button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>2026 Jacob Kinard | CSCE 242 Web Applications</p>
+    </footer>
+    <script src="../../project7.js"></script>
+</body>
+</html>
