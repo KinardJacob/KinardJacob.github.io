@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "image": "../../JSON images/fam2.png",
+    "image": "../../JSON images/eng.png",
     "title": "Engagement Mini Session",
     "type": "Couples",
     "duration": "50 minutes",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "image": "../../JSON images/grad2.png",
+    "image": "../../JSON images/fam2.png",
     "title": "Lifestyle Story Session",
     "type": "Lifestyle",
     "duration": "90 minutes",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "image": "../../JSON images/adventure.png",
+    "image": "../../JSON images/grad2.png",
     "title": "Senior Portrait Premium",
     "type": "Seniors",
     "duration": "90 minutes",
