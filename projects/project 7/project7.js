@@ -1,8 +1,8 @@
 const jsonSources = [
-    "https://raw.githubusercontent.com/KinardJacob/KinardJacob.github.io/main/projects/project%207/packages.json",
     "packages.json",
     "../../packages.json",
-    "../packages.json"
+    "../packages.json",
+    "https://raw.githubusercontent.com/KinardJacob/KinardJacob.github.io/main/projects/project%207/packages.json"
 ];
 
 const portfolioGrid = document.getElementById("portfolio-grid");
